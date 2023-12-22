@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title›> Adam Wahada Portfolio </title>
+<link rel="stylesheet" type="text/css" href="tests.css">
+</head>
+<body>
+<header>
+  
+<a href="#index.html" class="logo"> N<span>E</span>S.</a>
+
+<ul class="navlist">
+<li><a href="index.html" class='active'> Home </a></li>
+<li><a href="index.html" > Contact me </a></li>
+</ul>
+<div class="bx bx-menu" id="menu-icon">
+</div>
+</header>
+</body>
+
+<div class="about-text">
+<h2> Plus à propos de moi : <span> Wahada Adam </span></h2>
+<br>
+
+
+<h2 ><FONT color=#FF1493> Education </FONT></h2>
+<br>
+<p>
+<li>college pilote Mannouba 2013-2016</li>
+<li>lycée pilote Menzah 8 2016-2020</li>
+<li>institut préparatoire aux études d'ingénieur de Manar 2021-2023</li>
+<li>Esprit: currently</li> </p>
+<br>
+<h2> <FONT color=#FF1493> Extracurricular activities </FONT></h2>
+<br>
+<p>
+<li>Technovation program finalist 2018</li>
+<li>A member of the Youth Clubs association 2017-2020</li>
+<li>Current member of the INCEPTUM Junior Entreprise</li>
+
+
+
+
+</p>
+<br>
+<h2><FONT color=#FF1493> Hobbies </FONT> </h2>
+<br>
+<p>
+<li>coding</li>
+<li>reading books</li>
+<li>listening to music</li> </p>
+
+<p>
+</p>
+<p>
+<br>
+<h2> <FONT color=#FF1493> Languages</FONT> </h2>
+<br>
+
+
+<li>English </li>
+<li>arabic</li>
+
+<li>frensh</li>
+<li>espanol
+<li>italien</li> </p>
+
+</div>
+</section>
+<br><br><br>
+<footer class="footer">
+<div class="footer__wrapper wrapper--large">
+<p class="footer__copyright no-margin">&copy; 2023 -Esprit</p>
+<a href="index.html" class="btn" > Return </a>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      // Empêcher la soumission du formulaire par défaut
+      event.preventDefault();
+
+      // Appeler la fonction de validation
+      validateForm();
+    });
+
+    function validateForm() {
+      // Récupérer la valeur de l'âge
+      var age = document.getElementById("age").value;
+
+      // Réinitialiser les messages d'erreur
+      document.getElementById("ageError").innerHTML = "";
+
+      // Valider l'âge (par exemple, s'assurer qu'il s'agit d'un nombre positif)
+      if (isNaN(age) || age <= 0) {
+        document.getElementById("ageError").innerHTML = "Veuillez saisir un âge valide.";
+        alert("Erreur : Veuillez saisir un âge valide.");
+      } else {
+        // Si l'âge est valide, vous pouvez soumettre le formulaire ici
+        alert("Formulaire soumis avec succès ! Âge saisi : " + age);
+        // Vous pouvez également utiliser document.getElementById("myForm").submit(); pour soumettre le formulaire programmatically
+      }
+    }
+  </script>
+
+</div>
+
+</footer>
+
+</html>  
